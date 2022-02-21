@@ -1,0 +1,98 @@
+---
+GlowToolsVersion: '2022-02-02 (532a75773) ()'
+...
+---
+GraphPreLowerHash: 0x58AF9FBEB12C963D
+...
+---
+- NodeOutputName:  'Convolution110__2:0'
+  Min:             -16.335689544677734375
+  Max:             7.85840320587158203125
+  Histogram:       [ 8, 50, 215, 874, 2882, 6549, 16472, 3788, 460, 62 ]
+- NodeOutputName:  'Convolution28__2:0'
+  Min:             -4.916757106781005859375
+  Max:             3.2074844837188720703125
+  Histogram:       [ 69, 107, 316, 1516, 3529, 32068, 20812, 2778, 1312, 
+                     213 ]
+- NodeOutputName:  'Convolution28__5:0'
+  Min:             0.0
+  Max:             1.0
+  Histogram:       [ 6595, 105, 93, 53, 67, 76, 96, 71, 113, 571 ]
+- NodeOutputName:  'Input3:0'
+  Min:             0.0
+  Max:             1.0
+  Histogram:       [ 6595, 105, 93, 53, 67, 76, 96, 71, 113, 571 ]
+- NodeOutputName:  'Parameter193_reshape1__1:0'
+  Min:             -0.759514331817626953125
+  Max:             1.186131000518798828125
+  Histogram:       [ 110, 680, 3390, 10090, 8270, 2410, 540, 100, 0, 10 ]
+- NodeOutputName:  'Parameter194__1:0'
+  Min:             -0.12640963494777679443359375
+  Max:             0.14021874964237213134765625
+  Histogram:       [ 10, 0, 30, 10, 0, 20, 0, 20, 0, 10 ]
+- NodeOutputName:  'Parameter5__1:0'
+  Min:             -0.972681224346160888671875
+  Max:             1.0189645290374755859375
+  Histogram:       [ 10, 60, 240, 330, 430, 380, 380, 110, 50, 10 ]
+- NodeOutputName:  'Parameter87__1:0'
+  Min:             -0.508857905864715576171875
+  Max:             0.564721167087554931640625
+  Histogram:       [ 160, 760, 3520, 7830, 9020, 6650, 2900, 900, 230, 
+                     30 ]
+- NodeOutputName:  'Pooling160__1:0'
+  Min:             0.0
+  Max:             7.85840320587158203125
+  Histogram:       [ 1735, 268, 211, 137, 90, 55, 27, 17, 11, 9 ]
+- NodeOutputName:  'Pooling66__1:0'
+  Min:             0.0
+  Max:             3.2074844837188720703125
+  Histogram:       [ 12987, 667, 541, 426, 315, 266, 244, 150, 63, 21 ]
+- NodeOutputName:  'ReLU114__1:0'
+  Min:             0.0
+  Max:             7.85840320587158203125
+  Histogram:       [ 28962, 1088, 620, 323, 169, 106, 41, 26, 15, 10 ]
+- NodeOutputName:  'ReLU114__1_max:0'
+  Min:             0.0
+  Max:             7.85840320587158203125
+  Histogram:       [ 28962, 1088, 620, 323, 169, 106, 41, 26, 15, 10 ]
+- NodeOutputName:  'ReLU32__1:0'
+  Min:             0.0
+  Max:             3.2074844837188720703125
+  Histogram:       [ 55782, 2025, 1524, 1102, 821, 674, 452, 234, 81, 25 ]
+- NodeOutputName:  'ReLU32__1_max:0'
+  Min:             0.0
+  Max:             3.2074844837188720703125
+  Histogram:       [ 55782, 2025, 1524, 1102, 821, 674, 452, 234, 81, 25 ]
+- NodeOutputName:  'Times212__2:0'
+  Min:             -22.9674968719482421875
+  Max:             27.6424102783203125
+  Histogram:       [ 1, 4, 9, 38, 20, 11, 9, 3, 3, 2 ]
+- NodeOutputName:  'Times212__2_bias:0'
+  Min:             -22.9674968719482421875
+  Max:             27.6424102783203125
+  Histogram:       [ 1, 4, 9, 38, 20, 11, 9, 3, 3, 2 ]
+- NodeOutputName:  'Times212__2_dot:0'
+  Min:             -22.912212371826171875
+  Max:             27.6917934417724609375
+  Histogram:       [ 1, 4, 9, 38, 20, 11, 9, 3, 3, 2 ]
+- NodeOutputName:  'Times212_reshape0__1:0'
+  Min:             0.0
+  Max:             7.85840320587158203125
+  Histogram:       [ 1735, 268, 211, 137, 90, 55, 27, 17, 11, 9 ]
+- NodeOutputName:  'conv_bias__2:0'
+  Min:             -0.4338356554508209228515625
+  Max:             0.091641359031200408935546875
+  Histogram:       [ 10, 0, 0, 0, 0, 30, 0, 20, 10, 10 ]
+- NodeOutputName:  'conv_bias__3:0'
+  Min:             -0.4147408306598663330078125
+  Max:             0.013284145854413509368896484375
+  Histogram:       [ 10, 0, 0, 20, 20, 30, 20, 30, 10, 20 ]
+- NodeOutputName:  'zero:0'
+  Min:             0.0
+  Max:             0.0
+  Histogram:       [ 62720, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+- NodeOutputName:  'zero__1:0'
+  Min:             0.0
+  Max:             0.0
+  Histogram:       [ 31360, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+...

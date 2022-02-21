@@ -1,0 +1,18 @@
+This directory contains two set of images to be used in the calibration
+process. These images were extracted from imagenet, ILSVRC2012, which are in
+jpeg format and were converted to png format by changing them from BGR to RGB
+and resizing them to 224x224 in the images224 folder or to 299x299 in the
+images299. A program file called jpg2png.cpp and its CmakeList.txt was included
+to help in this conversion. To compile it, just do:
+
+mkdir build; cd build
+cmake ..
+make
+mv jpg2png ..
+
+Usage:
+
+jpg2png path/to/original/jpeg/image path/to/save/png/image size
+
+where size is 224 or 299.
+

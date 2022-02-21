@@ -1,0 +1,67 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/Users/marcio/nmp/work/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/e00b6627/
+BUFFER_SIZE	resnet18/resnet18.cpp	/^#define	BUFFER_SIZE	/;"	d	file:
+CMAKE_CXX_STANDARD	calibration/CMakeLists.txt	/^set(CMAKE_CXX_STANDARD 11)$/;"	v
+CMAKE_CXX__STANDARD_REQUIRED	calibration/CMakeLists.txt	/^set(CMAKE_CXX__STANDARD_REQUIRED ON)$/;"	v
+CPACK_PROJECT_NAME	calibration/CMakeLists.txt	/^set(CPACK_PROJECT_NAME ${PROJECT_NAME})$/;"	v
+CPACK_PROJECT_VERSION	calibration/CMakeLists.txt	/^set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})$/;"	v
+DEFAULT_HEIGHT	mnist/main.cpp	/^#define DEFAULT_HEIGHT /;"	d	file:
+DEFAULT_WIDTH	mnist/main.cpp	/^#define DEFAULT_WIDTH /;"	d	file:
+Inference on DQ1-A0	lenet/readme.md	/^## Inference on DQ1-A0$/;"	s	chapter:MNIST - Handwritten Digit Recognition
+Inference on DQ1-A0	resnet18/readme.md	/^## Inference on DQ1-A0$/;"	s	chapter:ONNX ResNet18-v1
+Inference on DQ1-B0	lenet/readme.md	/^## Inference on DQ1-B0$/;"	s	chapter:MNIST - Handwritten Digit Recognition
+Inference on DQ1-B0	resnet18/readme.md	/^## Inference on DQ1-B0$/;"	s	chapter:ONNX ResNet18-v1
+MNIST - Handwritten Digit Recognition	lenet/readme.md	/^# MNIST - Handwritten Digit Recognition$/;"	c
+MNIST - Handwritten Digit Recognition	mnist/readme.md	/^# MNIST - Handwritten Digit Recognition$/;"	c
+ONNX ResNet18-v1	resnet18/readme.md	/^# ONNX ResNet18-v1$/;"	c
+OUTPUT_LEN	mnist/main.cpp	/^#define OUTPUT_LEN /;"	d	file:
+OUT_BUF_SIZE	resnet18/resnet18.cpp	/^#define	OUT_BUF_SIZE	/;"	d	file:
+ShowTops	lenet/mnist.cpp	/^void ShowTops(unsigned long address, const char *file_name) {$/;"	f	typeref:typename:void
+ShowTops	mnist/main.cpp	/^void ShowTops(const char *file_name) {$/;"	f	typeref:typename:void
+ShowTops	resnet18/resnet18.cpp	/^void ShowTops(int dev, unsigned long address, const char* file_name)$/;"	f	typeref:typename:void
+__anon36e2b9080108	lenet/mnist.cpp	/^typedef struct {$/;"	s	file:
+__anond9733a390108	resnet18/resnet18.cpp	/^{$/;"	s	file:
+buf	lenet/mnist.cpp	/^    char *buf;$/;"	m	struct:__anon36e2b9080108	typeref:typename:char *	file:
+buf	resnet18/resnet18.cpp	/^  char  *buf;$/;"	m	struct:__anond9733a390108	typeref:typename:char *	file:
+convertImage	calibration/jpg2png.cpp	/^int convertImage(const char *file_in, const char* file_out, int size) {$/;"	f	typeref:typename:int
+dev	lenet/mnist.cpp	/^int dev;$/;"	v	typeref:typename:int
+getXYZ	mnist/main.cpp	/^size_t getXYZ(const size_t *dims, size_t x, size_t y, size_t z) { return (x * dims[1] * dims[2])/;"	f	typeref:typename:size_t
+index_5	lenet/mnist.cpp	/^int index_5[6];$/;"	v	typeref:typename:int[6]
+index_5	mnist/main.cpp	/^int index_5[5];$/;"	v	typeref:typename:int[5]
+index_5	resnet18/resnet18.cpp	/^int index_5[5];$/;"	v	typeref:typename:int[5]
+inputAddr	mnist/main.cpp	/^uint8_t *inputAddr = GLOW_GET_ADDR(mutableWeight, MNIST_data_0);$/;"	v	typeref:typename:uint8_t *
+inputImageFilenames	mnist/main.cpp	/^std::vector<std::string> inputImageFilenames;$/;"	v	typeref:typename:std::vector<std::string>
+jpg2png	calibration/CMakeLists.txt	/^add_executable(jpg2png jpg2png.cpp)$/;"	t
+jpg2png	calibration/CMakeLists.txt	/^project(jpg2png VERSION 0.1.0)$/;"	p
+labels	resnet18/resnet18.cpp	/^int labels[1024];$/;"	v	typeref:typename:int[1024]
+lne_data	lenet/mnist.cpp	/^} __attribute__((packed)) lne_data;$/;"	t	typeref:struct:__anon36e2b9080108	file:
+lne_data	resnet18/resnet18.cpp	/^}__attribute__((packed))lne_data;$/;"	t	typeref:struct:__anond9733a390108	file:
+loadBinary	lenet/mnist.cpp	/^int loadBinary(const char *file_name, unsigned long address) {$/;"	f	typeref:typename:int
+loadBinary	resnet18/resnet18.cpp	/^int loadBinary(int dev, const char* file_name, unsigned long address)$/;"	f	typeref:typename:int
+loadImage	lenet/mnist.cpp	/^int loadImage(const char *file_name, unsigned long address) {$/;"	f	typeref:typename:int
+loadImage	resnet18/resnet18.cpp	/^int loadImage(int dev, const char *file_name, unsigned long address) {$/;"	f	typeref:typename:int
+main	calibration/jpg2png.cpp	/^int main(int argc, char* argv[])$/;"	f	typeref:typename:int
+main	lenet/mnist.cpp	/^int main(int argc, char *argv[]) {$/;"	f	typeref:typename:int
+main	mnist/main.cpp	/^int main(int argc, char **argv) {$/;"	f	typeref:typename:int
+main	resnet18/resnet18.cpp	/^int main(int argc, char* argv[])$/;"	f	typeref:typename:int
+outputAddr	mnist/main.cpp	/^uint8_t *outputAddr = GLOW_GET_ADDR(mutableWeight, MNIST_softmax_1);$/;"	v	typeref:typename:uint8_t *
+parseCommandLineOptions	mnist/main.cpp	/^void parseCommandLineOptions(int argc, char **argv) {$/;"	f	typeref:typename:void
+readPngImage	mnist/main.cpp	/^bool readPngImage(const char *filename, std::pair<float, float> range, float *&imageT, size_t *i/;"	f	typeref:typename:bool
+result_buf	resnet18/resnet18.cpp	/^uint16_t result_buf[OUT_BUF_SIZE];$/;"	v	typeref:typename:uint16_t[]
+size	lenet/mnist.cpp	/^    unsigned long size;$/;"	m	struct:__anon36e2b9080108	typeref:typename:unsigned long	file:
+size	resnet18/resnet18.cpp	/^  unsigned long  size;$/;"	m	struct:__anond9733a390108	typeref:typename:unsigned long	file:
+swap_elements	lenet/mnist.cpp	/^void swap_elements(int idx, int pos, float val) {$/;"	f	typeref:typename:void
+swap_elements	mnist/main.cpp	/^void swap_elements(int idx, int pos, float val) {$/;"	f	typeref:typename:void
+swap_elements	resnet18/resnet18.cpp	/^void swap_elements(int idx, int pos, float val) {$/;"	f	typeref:typename:void
+top_5	lenet/mnist.cpp	/^float top_5[6];$/;"	v	typeref:typename:float[6]
+top_5	mnist/main.cpp	/^float top_5[5];$/;"	v	typeref:typename:float[5]
+top_5	resnet18/resnet18.cpp	/^float top_5[5];$/;"	v	typeref:typename:float[5]
