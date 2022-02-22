@@ -13,8 +13,8 @@ After downloading the `mnist.onnx` model in the `/work/mnist` folder, you can
 compile, build the application and run the inference following the steps:
 
 ``` 
-make -f compile.cmake
-make -f builder.cmake
+make -f compile.mk
+make -f builder.mk
 cd bin
 ./main.x ../../datasets/mnist/*.png
 ```
