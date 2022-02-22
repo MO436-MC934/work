@@ -1,0 +1,14 @@
+*.o
+*.x
+*.bin
+*.lir
+*.ll
+*~
+.DS_Store
+*.dot
+*.pdf
+*.txt
+*.map
+*.h
+**/*.exe
+tags
