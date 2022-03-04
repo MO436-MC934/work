@@ -23,9 +23,9 @@ Model name	Model size	Top-1 accuracy	Top-5 accuracy
 mobilenet	13.0 Mb	       71.8%	        90.6%
 
 CPU accuracy
-Top1: 47.7%
-Top5: 74%
-Precision: 46.2624%
-Recall: 49.6687%
-F1-score: 47.9051%
+Top1: 70.1%
+Top5: 90.5%
+Precision: 69.8499%
+Recall: 70.6367%
+F1-score: 70.2411%
 ```

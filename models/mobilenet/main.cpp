@@ -59,7 +59,7 @@ size_t getXYZ(const size_t *dims, size_t x, size_t y, size_t z) {
 
 /// Reads a PNG image from a file into a newly allocated memory block \p imageT
 /// representing a WxHxNxC tensor and returns it.
-bool readPngImage(const char *filename, std::pair<float, float> range, float *&imageT, size_t *imageDims) {
+bool readPngImage(const char *filename, float *&imageT, size_t *imageDims) {
     unsigned char header[8];
     // open file and test for it being a png.
     FILE *fp = fopen(filename, "rb");
@@ -126,19 +126,16 @@ bool readPngImage(const char *filename, std::pair<float, float> range, float *&i
     imageDims[2] = numChannels;
     imageT = static_cast<float *>(calloc(1, width * height * numChannels * sizeof(float)));
 
-    float scale = ((range.second - range.first) / 255.0);
-    float bias = range.first;
+    // normalization specific to mobilenet model
+    float mean = 127.5;
+    float scale = 127.5;
 
     for (size_t row_n = 0; row_n < height; row_n++) {
         png_byte *row = row_pointers[row_n];
         for (size_t col_n = 0; col_n < width; col_n++) {
             png_byte *ptr = &(row[col_n * (hasAlpha ? (numChannels + 1) : numChannels)]);
-            if (isGray) {
-                imageT[getXYZ(imageDims, row_n, col_n, 0)] = float(ptr[0]) * scale + bias;
-            } else {
-                imageT[getXYZ(imageDims, row_n, col_n, 0)] = float(ptr[0]) * scale + bias;
-                imageT[getXYZ(imageDims, row_n, col_n, 1)] = float(ptr[1]) * scale + bias;
-                imageT[getXYZ(imageDims, row_n, col_n, 2)] = float(ptr[2]) * scale + bias;
+            for (size_t ch=0; ch < numChannels; ch++) {
+              imageT[getXYZ(imageDims, row_n, col_n, ch)] = ((float)(ptr[ch]) - mean) / scale;
             }
         }
     }
@@ -266,8 +263,7 @@ int main(int argc, char **argv) {
         inputT = static_cast<float *>(malloc(inputSizeInBytes));
         float *imageT{nullptr};
         size_t dims[3];
-        std::pair<float, float> range = std::make_pair(0., 1.0);
-        bool loadSuccess = !readPngImage(inputImageFilenames[n].c_str(), range, imageT, dims);
+        bool loadSuccess = !readPngImage(inputImageFilenames[n].c_str(), imageT, dims);
         assert(loadSuccess && "Error reading input image.");
         assert((dims[0] == DEFAULT_HEIGHT && dims[1] == DEFAULT_WIDTH) &&
                "All images must have the same Height and Width");
@@ -276,7 +272,7 @@ int main(int argc, char **argv) {
         for (unsigned z = 0; z < 3; z++) {
             for (unsigned y = 0; y < dims[1]; y++) {
                 for (unsigned x = 0; x < dims[0]; x++) {
-                    inputT[getXYZW(inputDims, 0, 2 - z, x, y)] = imageT[getXYZ(dims, x, y, z)];
+                    inputT[getXYZW(inputDims, 0, z, x, y)] = imageT[getXYZ(dims, x, y, z)];
                 }
             }
         }
