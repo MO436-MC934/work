@@ -10,9 +10,9 @@ Model	    ONNX version	Opset version	Top-1 accuracy (%)	Top-5 accuracy (%)
 ResNet18	1.2.1	        7	            69.93	            89.29
 
 CPU accuracy
-Top1: 42.8%
-Top5: 66.4%
-Precision: 42.8294%
-Recall: 44.4565%
-F1-score: 43.6278%
+Top1: 69%
+Top5: 88.5%
+Precision: 68.398%
+Recall: 69.4539%
+F1-score: 68.9219%
 ```
