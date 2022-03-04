@@ -6,7 +6,7 @@ helpFunction()
 {
    echo ""
    echo "Usage: $0 -m [model]"
-   printf "Available models:\n- mnist\n- lenet\n- resnet18\n- mobilenet\n"
+   printf "Available models:\n- mnist\n- lenet\n- resnet18\n- mobilenet\n- squeezenet\n"
    exit 1
 }
 
@@ -24,7 +24,8 @@ then
 elif [ "$model" != "mnist" ] &&
      [ "$model" != "lenet" ] &&
      [ "$model" != "resnet18" ] &&
-     [ "$model" != "mobilenet" ]
+     [ "$model" != "mobilenet" ] &&
+     [ "$model" != "squeezenet" ]
 then
   helpFunction
 fi
