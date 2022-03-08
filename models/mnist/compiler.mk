@@ -19,7 +19,6 @@ ${BUNDLE}/$(MODEL).o : $(MODEL).onnx
 		-dump-graph-DAG=$(MODEL)-after.dot \
 		-reuse-activation-memory-allocations=$(MEMOPT) \
         -backend=CPU \
-		-MO436-features=true \
 		-dump-ir > $(MODEL).lir
 
 clean:

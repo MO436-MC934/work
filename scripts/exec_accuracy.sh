@@ -37,11 +37,13 @@ if [ "$model" == "mnist" ] ||
    [ "$model" == "lenet" ]
 then
   ground_truth=$DIR/ground_truth_mnist.txt
-  ./main.x ../../../datasets/mnist/val*.png > $model.res
+  ./main.x ../../../datasets/mnist/mnist*.png > $model.res
+  cd $DIR; clang++ -o measure_mnist measure_mnist.cpp
+  ./measure_mnist ../models/$model/bin/$model.res $ground_truth
 else
   ground_truth=$DIR/ground_truth_imagenet.txt
   ./main.x ../../../datasets/imagenet/val*.png > $model.res
+  cd $DIR; clang++ -o measure_acc measure_acc.cpp
+  ./measure_acc ../models/$model/bin/$model.res $ground_truth
 fi
 
-cd $DIR; clang++ -o measure_acc measure_acc.cpp
-./measure_acc ../models/$model/bin/$model.res $ground_truth
