@@ -9,19 +9,24 @@ inference of neural network models:
     ├── calibration
     │   ├── images224
     │   ├── images299
+    │   └── ...
     ├── datasets
     │   ├── imagenet
+    │   └── mnist
+    ├── models
+    │   ├── lenet
     │   ├── mnist
-    ├── lenet
-    ├── mnist
-    ├── resnet18
-    ├── scripts
-    │   ├── exec_model_accuracy.sh
-    │   ├── ground_truth_imagenet.txt
-    │   ├── ground_truth_mnist.txt
-    │   ├── measure_acc.cpp
-    │   ├── synset_words.txt
-    │   ├── ...
-    └── ...
+    │   ├── mobilenet
+    │   ├── resnet18
+    │   └── squeezenet
+    ├── readme.md
+    ├── scripts
+    │   ├── exec_accuracy.sh
+    │   ├── ground_truth_imagenet.txt
+    │   ├── ground_truth_mnist.txt
+    │   ├── measure_acc.cpp
+    │   ├── measure_mnist.cpp
+    │   ├── ...
+
 ```
 
