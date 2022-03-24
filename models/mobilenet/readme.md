@@ -12,9 +12,7 @@ line below:
 tflite2onnx mobilenet_v2_1.0_224.tflite mobilenet.onnx
 ```
 
-## Inference on DQ1-A0
-
-Measuring the accuracy on CPU:
+## Measuring the accuracy on CPU:
 
 ```
 Model name	Model size	Top-1 accuracy	Top-5 accuracy
