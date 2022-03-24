@@ -21,7 +21,7 @@ cd bin
 
 ## Measuring the accuracy on CPU:
 
-To measure the accuracy of `mnist`, go to the /work/scripts folder and run the script:
+To measure the accuracy of `mnist`, go to the `/work/scripts` folder and run the script:
 
 ``` 
 ./exec_accuracy.sh -m mnist
@@ -37,7 +37,7 @@ Model	    ONNX version	Opset version	Top-1 accuracy (%)	Top-5 accuracy (%)
 MNIST           1.3              8                98.9                     -
 ```
 
-In my CPU with only 30 images (that explains the Top-1 error rate of 3.33%):
+In my CPU, with only 30 images (that explains the Top-1 error rate of 3.33%):
 
 ```
 Top1: 96.6667%
