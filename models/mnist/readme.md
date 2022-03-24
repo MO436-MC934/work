@@ -16,7 +16,7 @@ compile, build the application and run the inference following the steps:
 make -f compile.mk
 make -f builder.mk
 cd bin
-./main.x ../../datasets/mnist/*.png
+./main.x ../../../datasets/mnist/*.png
 ```
 
 Measuring the accuracy on CPU:
