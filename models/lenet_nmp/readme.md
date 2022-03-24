@@ -6,7 +6,7 @@ This model predicts handwritten digits using a convolutional neural network
 
 ```
 Model   ONNX version	Opset version	Top-1 accuracy (%)	Top-5 accuracy (%)
-MNIST	      1.3	            8	            98.9	            -
+MNIST	      1.3	          8	            98.9	            -
 ```
 
 ## Inference on DQ1-A0
