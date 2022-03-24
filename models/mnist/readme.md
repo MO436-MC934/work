@@ -21,10 +21,25 @@ cd bin
 
 Measuring the accuracy on CPU:
 
+To measure the accuracy of `mnist`, go to the /work/scripts folder and run the script:
+
+``` 
+./exec_accuracy.sh -m mnist
+
+```
+
+Using the CNTK as the framework to perform the inference in the test set (10.000 images)
+of the popular [MNIST dataset](http://yann.lecun.com/exdb/mnist/), the TOP-1 error
+rate is equal 1.1%.
+
 ```
 Model	    ONNX version	Opset version	Top-1 accuracy (%)	Top-5 accuracy (%)
-MNIST           1.3              8               98.9                -
+MNIST           1.3              8                98.9                     -
+```
 
+In my CPU with only 30 images (that explains the Top-1 error rate of 3.33%):
+
+```
 Top1: 96.6667%
 Top5: 100%
 Precision: 97.5%
