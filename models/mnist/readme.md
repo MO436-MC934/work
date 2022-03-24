@@ -19,7 +19,7 @@ cd bin
 ./main.x ../../../datasets/mnist/*.png
 ```
 
-Measuring the accuracy on CPU:
+## Measuring the accuracy on CPU:
 
 To measure the accuracy of `mnist`, go to the /work/scripts folder and run the script:
 
