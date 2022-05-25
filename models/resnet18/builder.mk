@@ -6,7 +6,7 @@ MAIN  ?= main
 # Toolchain
 CXX =clang++
 CXXFLAGS = -O2 -Wall
-LIBS := -lpng
+LIBS := -lpng -lopenblas
 
 BUNDLE_DIR := ./bin
 BUILD_DIR := ./bin
